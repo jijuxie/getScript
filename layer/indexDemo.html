@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>封装测试页面</title>
+    <script src="js/js1.9.1-min.js"></script>
+    <script src="layer/layer.js"></script>
+</head>
+<body>
+<div>
+    <h4>1.putalert</h4>
+    <button onclick="putalert.simple('展示putalert：simple(massage)')">展示putalert：simple(massage)</button>
+    <button onclick="putalert.warnning('展示putalert：warnning(massage)')">展示putalert：warnning(massage)</button>
+    <button onclick="putalert.success('展示putalert：success(massage)')">展示putalert：success(massage)</button>
+    <button onclick="putalert.error('展示putalert：error(massage)')">展示putalert：error(massage)</button>
+    <button onclick="putalert.ask('展示putalert：error(massage)')">展示putalert：ask(massage)</button>
+    <button onclick="putalert.bad('展示putalert：bad(massage)')">展示putalert：bad(massage)</button>
+</div>
+<div>
+    <h4>2.putconfirm</h4>
+    <button onclick="putconfirm.simple('展示putconfirm：simple(massage)')">展示putconfirm：simple(massage)</button>
+    <button onclick="putconfirm.warnning('展示putconfirm：warnning(massage)')">展示putconfirm：warnning(massage)</button>
+    <button onclick="putconfirm.success('展示putconfirm：success(massage)')">展示putconfirm：success(massage)</button>
+    <button onclick="putconfirm.error('展示putconfirm：error(massage)')">展示putconfirm：error(massage)</button>
+    <button onclick="putconfirm.ask('展示putconfirm：ask(massage)')">展示putconfirm：ask(massage)</button>
+    <button onclick="putconfirm.bad('展示putconfirm：bad(massage)')">展示putconfirm：bad(massage)</button>
+
+</div>
+<div>
+    <h4>3.putmsg</h4>
+    <button onclick="putmsg.simple('展示putmsg：simple(massage)')">展示putmsg：simple(massage)</button>
+    <button onclick="putmsg.warnning('展示putmsg：warnning(massage)')">展示putmsg：warnning(massage)</button>
+    <button onclick="putmsg.success('展示putmsg：success(massage)')">展示putmsg：success(massage)</button>
+    <button onclick="putmsg.error('展示putmsg：error(massage)')">展示putmsg：error(massage)</button>
+    <button onclick="putmsg.ask('展示putmsg：ask(massage)')">展示putmsg：ask(massage)</button>
+    <button onclick="putmsg.bad('展示putmsg：bad(massage)')">展示putmsg：bad(massage)</button>
+    <button onclick="putmsg.animal('展示putmsg：animal(massage)')">展示putmsg：animal(massage)</button>
+</div>
+<div>
+    <h4>4.puttip</h4>
+    <button id="tip1" onclick="puttip.up('#tip1','展示puttip：up(id,massage,color)')">展示puttip：up(id,massage,color)
+    </button>
+    <button id="tip2" onclick="puttip.down('#tip2','展示puttip：down(id,massage,color)')">展示puttip：down(id,massage,color)
+    </button>
+    <button id="tip3" onclick="puttip.left('#tip3','展示puttip：left(id,massage,color)')">展示puttip：left(id,massage,color)
+    </button>
+    <button id="tip4" onclick="puttip.right('#tip4','展示puttip：right(id,massage,color)')">
+        展示puttip：right(id,massage,color)
+    </button>
+</div>
+<div>
+    <h4>5.puttab</h4>
+    <button onclick="puttab(tab,area)">
+        展示puttab(tab,area)
+    </button>
+</div>
+<script src="putLayer.js">
+</script>
+</body>
+</html>
