@@ -1,8 +1,11 @@
 /**
- * Created by 12156 on 2017/2/20.
+ * Created by qinxy on 2017/3/4.
  */
+function oo() {
+    putopen('<img width="400"height="500"  src="pic.jpg"/>', 2,'400px','500px');
+}
 var tipcolor = 'rgba(255,0,0,0.5)';//默认的tipcolor，可以设置，传入color值时则不走这个
-//对layer alert方法的封装，会产生不同的icon图标与title,用于给用户提示操作的结果
+
 //一般tab只用一此所以在此声明tab的属性也可以提前，如果在一页上出现很多个TAB时，可以复制几个分别用于不同的内容。
 var tab = [
     {title: 'tab1', content: '这里放第一个tab内容'},
@@ -11,51 +14,122 @@ var tab = [
 ];
 //次数设置tab的样式，可以单独赋值也可以分别复制一份然后赋值。
 var area = ['600px', '600px'];
+//对layer alert方法的封装，会产生不同的icon图标与title,用于给用户提示操作的结果
 var putalert = {
-    simple: function (massage) {
-        layer.alert(massage);
+    simple: function (massage, func) {
+        layer.alert(massage, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    warnning: function (massage) {
-        layer.alert(massage, {icon: 0, title: '警告'});
+    warnning: function (massage, func) {
+        layer.alert(massage, {icon: 0, title: '警告'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    success: function (massage) {
-        layer.alert(massage, {icon: 1, title: '成功'});
+    success: function (massage, func) {
+        layer.alert(massage, {icon: 1, title: '成功'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    error: function (massage) {
-        layer.alert(massage, {icon: 2, title: '错误'})
+    error: function (massage, func) {
+        layer.alert(massage, {icon: 2, title: '错误'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    ask: function (massage) {
-        layer.alert(massage, {icon: 3, title: '询问'})
+    ask: function (massage, func) {
+        layer.alert(massage, {icon: 3, title: '询问'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    lock: function (massage) {
-        layer.alert(massage, {icon: 4, title: '锁定'})
+    lock: function (massage, func) {
+        layer.alert(massage, {icon: 4, title: '锁定'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    bad: function (massage) {
-        layer.alert(massage, {icon: 5, title: '失败'})
+    bad: function (massage, func) {
+        layer.alert(massage, {icon: 5, title: '失败'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     }
 };
 //对选择框进行封装，不同的icon对应不同的
 var putconfirm = {
-    simple: function (massage) {
-        layer.confirm(massage);
+    simple: function (massage, func) {
+        layer.confirm(massage, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    warnning: function (massage) {
-        layer.confirm(massage, {icon: 0, title: '警告'});
+    warnning: function (massage, func) {
+        layer.confirm(massage, {icon: 0, title: '警告'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    success: function (massage) {
-        layer.confirm(massage, {icon: 1, title: '成功'});
+    success: function (massage, func) {
+        layer.confirm(massage, {icon: 1, title: '成功'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    error: function (massage) {
-        layer.confirm(massage, {icon: 2, title: '错误'})
+    error: function (massage, func) {
+        layer.confirm(massage, {icon: 2, title: '错误'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    ask: function (massage) {
-        layer.confirm(massage, {icon: 3, title: '询问'})
+    ask: function (massage, func) {
+        layer.confirm(massage, {icon: 3, title: '询问'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    lock: function (massage) {
-        layer.confirm(massage, {icon: 4, title: '锁定'})
+    lock: function (massage, func) {
+        layer.confirm(massage, {icon: 4, title: '锁定'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     },
-    bad: function (massage) {
-        layer.confirm(massage, {icon: 5, title: '失败'})
+    bad: function (massage, func) {
+        layer.confirm(massage, {icon: 5, title: '失败'}, function (index) {
+            if (func) {
+                func();
+            }
+            layer.close(index);
+        });
     }
 };
 //简单提示，对用户操作进行提示,坚持不需要用户操作，无需任何操作即可自动关闭，只是提示一下而已
@@ -68,7 +142,7 @@ var putmsg = {
 
         });
     },
-    warnning: function (massage) {
+    warning: function (massage) {
         layer.msg(massage, {icon: 0});
     },
     success: function (massage) {
@@ -158,12 +232,38 @@ var putprompt = {
         );
     }
 };
-var puttab = function (tab, area) {
-    layer.tab({
-        area: area,
-        tab: tab
-    });
+//展现图片
+var putphoto = {
+    one: function (name, pic, anim) {
+        layer.photos({
+            closeBtn: 1,
+            photos: {
+                "title": name,
+                "data": [{
+                    "src": "pic.jpg"
+                }]
+            },
+            anim: anim
+        });
+    }
 };
-//先不封装了，感觉怪麻烦到时候再封装
-var putphoto=function () {
+/**
+ *
+ * @param content
+ * @param anim
+ */
+var putopen = function (content, anim,theW,theH) {
+    layer.open({
+
+            type: 1,
+            title: false,
+            area: [theW, theH],
+            shade: 0.7,
+            closeBtn: 1,
+            shadeClose: true,
+            content: content,
+            scrollbar: false,
+            anim: anim
+        }
+    );
 }
