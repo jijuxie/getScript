@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="version" content="xinfu-login-v1.0">
+    <meta name="author" content="jijuxie">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Title</title>
+    <link rel="stylesheet" href="fullpage/css/jquery.fullPage.css">
+
+</head>
+<body>
+<div style="position:fixed; z-index:1; ">
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block" href="#page1">1</a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block" href="#page2">2</a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block" href="#page3">3</a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block" href="#page4">4</a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.moveSectionUp()">向上滚动
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.moveSectionDown()">向下滚动
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.moveTo(3,2)">滚到特定位置
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.moveSlideLeft()">向左滚
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.moveSlideRight()">向右滚
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.setAutoScrolling(true)">使用自己的滑动条
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.setAutoScrolling(false)">用浏览器的滑动条
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.setAllowScrolling(true)">鼠标滚轮和触控板控制
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.setAllowScrolling(false)">删除鼠标滚轮和触控板控制
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.setKeyboardScrolling(false)">删除键盘方向键控制
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.setKeyboardScrolling(true)">键盘方向键控制
+    </a>
+    <a style="width:40px;height:40px;margin:5px;background-color:#00ff00;display: inline-block"
+       onclick="$.fn.fullpage.setScrollingSpeed(5000)">滚动速度
+    </a>
+</div>
+<header>
+
+</header>
+<div class="content_out">
+    <div id="fullpage">
+        <div class="section ">
+            一
+        </div>
+        <div class="section">
+            二
+        </div>
+        <div class="section">
+            三
+        </div>
+        <div class="section">
+            四
+        </div>
+    </div>
+</div>
+
+<footer>
+
+</footer>
+<script src="js/js1.9.1-min.js"></script>
+<!--需要用到easing参数用完整的jquery-ui代替jquery。easing-->
+<!--<script src="fullpage/js/jquery-ui-1.10.3.min.js"></script>-->
+<script src="js/jquery.easing.min.js"></script>
+<!-- 如果 scrollOverflow 设置为 true，则需要引入 jquery.slimscroll.min.js，一般情况下不需要 -->
+<!--<script src="js/jquery.slimscroll.min.js"></script>-->
+<!--fullpage主文件-->
+<script src="fullpage/js/jquery.fullPage.min.js"></script>
+<script>
+    $(function () {
+        //fullpage初始化
+        var fullpage = $('#fullpage').fullpage({
+            verticalCentered: true,//内容是否垂直居中
+            resize: false,//字体是否会随着窗口缩小而缩小
+            sectionsColor: ['#00FFFF', '#6666FF', '#9966FF', '#99FFFF'],//设置不同页面的背景色
+            anchors: ['page1', 'page2', 'page3', 'page4'],
+            scrollingSeep: 700,//滚动速度：int
+            easing: 'easeInQuart',//滚动画面方式
+            menu: true,//绑定菜单，设定相关属性与anchors的值对应后，菜单可以控制滚动
+            navigation: true,//是否开启项目导航
+            navigationPosition: 'right',//项目导航的位置
+            navigationColor: '#0f0',//项目导航的颜色,//不好使
+            navigationTooltips: ['page1', 'page2', 'page3', 'page4'],//项目导航的tip
+            slidesNavigation: true,//开启左右滑块的项目导航
+            slidesNavPosition: 'bottom',//左右滑块的项目导航位置，
+            controlArrowColor: '#0ff',//左右滑块的箭头颜色
+//            'loopBottom': false,//滑到最底部是否回滚会跨过几个页面
+//            'loopTop': false,//滑到最顶部是否回滚会快会过几个页面
+            loopHorizontal: false,//左右滑块是否循环滚动
+            autoScrolling: true,//是否使用插件的滚动方式，如果是false则会出现浏览器自带的滚动条
+            scrollOverflow: false,//超过满屏之后是否显示滚动条
+            css3: false,//是否使用CSS3 transforms滚动，好像设置之后一般会不好用
+            paddingTop: 0,//与顶部的距离。每一页都会产生一个padding
+            paddingBottom: 0,//与底部的距离
+            fixedElement: '<h1>这是固定的元素<h1/>',//产生固定的元素,不知道有啥子用
+//            normalScrollElements: '<h1>无滚动元素？？<h2/>',//字面意思是普通滚动元素
+            keyboardScrolling: true,//是否使用键盘导航
+            touchSensitivity: 5,//触摸敏感度
+            continuousVertical: true,//是否循环滚动，与 loopTop 及 loopBottom 不兼容
+//            index是离开页面的序号，此函数会替换掉滚动的效果，如果需要使用的话请在此动画内添加滚动方法
+//            onLeave: function (index, nextIndex, direction) {
+//
+//                onLeaveAnimal(index, nextIndex, direction);
+//            },
+            //：：：：滚动到每一页时所产生的回调函数
+            afterLoad: function (anchorLink, index) {
+                //不在这里写过多的代码不然会乱
+
+                afterLoadAnimal(anchorLink, index);
+            },
+            //某一滑块滚动前的回调函数，此函数会替换掉滚动的效果，如果需要使用的话请在此动画内添加滚动方法
+//            onSlideLeave: function () {
+//                onSlideLoadAnimal(anchorLink, index, slideIndex, direction);
+//            },
+            //某一滑动到某一水平滑块后的回调参数
+            afterSlideLoad: function (anchorLink, index, slideIndex, direction) {
+                afterSlideLoadAnimal(anchorLink, index, slideIndex, direction);
+            },
+            //页面结构生成后的回调函数，此函数也会替换掉一些方法和效果
+            afterRender: function () {
+                afterRenderAnimal()
+            }
+        });
+        //此方法承载了onSlideLoad后的所有动画参数分别为锚链接，index：第几个页面：滑动到了第几个slide页面，direction往那边滚动的left与right
+        function onSlideLoadAnimal(anchorLink, index, slideIndex, direction) {
+            switch (index) {
+                case 1:
+//                    animation.an1();
+                    break;
+
+            }
+        }
+
+        //此方法承载了afterSlideLoad之后的所有动画，参数分别为锚链接，index：第几个页面：滑动到了第几个slide页面，direction往那边滚动的left与right
+        function afterSlideLoadAnimal(anchorLink, index, slideIndex, direction) {
+            switch (index) {
+                case 1:
+//                    animation.an1();
+                    break;
+
+            }
+        }
+
+        //此方法承载了afterLoad之后的所有的动画anchorLink为锚链接名称，index为序号
+        function afterLoadAnimal(anchorLink, index) {
+            switch (index) {
+                case 1:
+//                    animation.redbag();
+                    break;
+            }
+        }
+
+        //此方法承载onLeave之后的所有动画 index是离开的页面序号，nextIndex是滚动到的页面序号，direction返回值为两个up与down，表示是上翻页和下翻页
+        function onLeaveAnimal(index, nextIndex, direction) {
+            switch (index) {
+                case 1:
+
+                    break;
+            }
+        }
+
+        //此方法承载了afterRender之后的所有动画无参数
+        function afterRenderAnimal() {
+            animation.an1();
+        }
+
+        //此方法封装多个动画与方法，用于多个地方，起名字要有艺术！！！！！！
+        var animation = {
+            redbag: function () {
+
+            }
+        };
+
+    });
+</script>
+</body>
+</html>
