@@ -2,6 +2,102 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="127c7b85-4022-446e-af5a-56111410310a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/add.jijuxie.animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/jijuxie.add.animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/js1.9.1-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/_base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/bounce.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/flash.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/headShake.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/jello.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/pulse.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/rubberBand.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/shake.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/swing.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/tada.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/attention_seekers/wobble.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_entrances/bounceIn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_entrances/bounceInDown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_entrances/bounceInLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_entrances/bounceInRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_entrances/bounceInUp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_exits/bounceOut.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_exits/bounceOutDown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_exits/bounceOutLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_exits/bounceOutRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/bouncing_exits/bounceOutUp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeIn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeInDown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeInDownBig.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeInLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeInLeftBig.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeInRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeInRightBig.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeInUp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_entrances/fadeInUpBig.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOut.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOutDown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOutDownBig.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOutLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOutLeftBig.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOutRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOutRightBig.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOutUp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/fading_exits/fadeOutUpBig.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/flippers/flip.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/flippers/flipInX.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/flippers/flipInY.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/flippers/flipOutX.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/flippers/flipOutY.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/lightspeed/lightSpeedIn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/lightspeed/lightSpeedOut.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_entrances/rotateIn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_entrances/rotateInDownLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_entrances/rotateInDownRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_entrances/rotateInUpLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_entrances/rotateInUpRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_exits/rotateOut.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_exits/rotateOutDownLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_exits/rotateOutDownRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_exits/rotateOutUpLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/rotating_exits/rotateOutUpRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/sliding_entrances/slideInDown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/sliding_entrances/slideInLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/sliding_entrances/slideInRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/sliding_entrances/slideInUp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/sliding_exits/slideOutDown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/sliding_exits/slideOutLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/sliding_exits/slideOutRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/sliding_exits/slideOutUp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/specials/hinge.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/specials/rollIn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/specials/rollOut.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_entrances/zoomIn.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_entrances/zoomInDown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_entrances/zoomInLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_entrances/zoomInRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_entrances/zoomInUp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_exits/zoomOut.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_exits/zoomOutDown.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_exits/zoomOutLeft.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_exits/zoomOutRight.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/source/zooming_exits/zoomOutUp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/.idea/theAllDemo_files.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/animate.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/animateCss/theAllDemo/style.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/animate.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -35,7 +131,7 @@
         </entry>
       </file>
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/animate.css/demo.html">
+        <entry file="file://$PROJECT_DIR$/animateCss/demo.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="936">
               <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
@@ -48,7 +144,7 @@
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/animate.css/index.html">
+        <entry file="file://$PROJECT_DIR$/animateCss/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -60,7 +156,7 @@
         </entry>
       </file>
       <file leaf-file-name="add.jijuxie.animate.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/animate.css/add.jijuxie.animate.css">
+        <entry file="file://$PROJECT_DIR$/animateCss/add.jijuxie.animate.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2952">
               <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="15" />
@@ -70,7 +166,7 @@
         </entry>
       </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/animate.css/README.md">
+        <entry file="file://$PROJECT_DIR$/animateCss/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="2832">
@@ -93,7 +189,7 @@
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/animate.css/theAllDemo/index.html">
+        <entry file="file://$PROJECT_DIR$/animateCss/theAllDemo/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="620">
               <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
@@ -103,7 +199,7 @@
         </entry>
       </file>
       <file leaf-file-name="jijuxie.add.animate.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/animate.css/jijuxie.add.animate.js">
+        <entry file="file://$PROJECT_DIR$/animateCss/jijuxie.add.animate.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
               <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -168,8 +264,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1055" />
-    <option name="y" value="357" />
+    <option name="x" value="303" />
+    <option name="y" value="151" />
     <option name="width" value="1201" />
     <option name="height" value="896" />
   </component>
@@ -213,6 +309,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="getScript" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="getScript" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="animateCss" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -302,15 +412,15 @@
       <workItem from="1489144483522" duration="1305000" />
       <workItem from="1489152655454" duration="5097000" />
       <workItem from="1489157783886" duration="1573000" />
-      <workItem from="1489159574708" duration="66000" />
+      <workItem from="1489159574708" duration="223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31893000" />
+    <option name="totallyTimeSpent" value="32050000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1055" y="357" width="1201" height="896" extended-state="0" />
+    <frame x="303" y="151" width="1201" height="896" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3350211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -362,7 +472,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/demo.html">
+    <entry file="file://$PROJECT_DIR$/animateCss/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
@@ -373,7 +483,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/index.html">
+    <entry file="file://$PROJECT_DIR$/animateCss/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -383,7 +493,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/add.jijuxie.animate.css">
+    <entry file="file://$PROJECT_DIR$/animateCss/add.jijuxie.animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2952">
           <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="15" />
@@ -391,7 +501,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/README.md">
+    <entry file="file://$PROJECT_DIR$/animateCss/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2832">
@@ -412,7 +522,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/theAllDemo/index.html">
+    <entry file="file://$PROJECT_DIR$/animateCss/theAllDemo/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -420,7 +530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/jijuxie.add.animate.js">
+    <entry file="file://$PROJECT_DIR$/animateCss/jijuxie.add.animate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -441,7 +551,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/demo.html">
+    <entry file="file://$PROJECT_DIR$/animateCss/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
@@ -452,7 +562,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/index.html">
+    <entry file="file://$PROJECT_DIR$/animateCss/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -462,7 +572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/add.jijuxie.animate.css">
+    <entry file="file://$PROJECT_DIR$/animateCss/add.jijuxie.animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2952">
           <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="15" />
@@ -470,7 +580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/README.md">
+    <entry file="file://$PROJECT_DIR$/animateCss/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -491,7 +601,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/jijuxie.add.animate.js">
+    <entry file="file://$PROJECT_DIR$/animateCss/jijuxie.add.animate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -532,7 +642,7 @@
     <entry file="file://$PROJECT_DIR$/img.json" />
     <entry file="file://$PROJECT_DIR$/html.html" />
     <entry file="file://$PROJECT_DIR$/animate.css/.editorconfig" />
-    <entry file="file://$PROJECT_DIR$/animate.css/js1.9.1-min.js">
+    <entry file="file://$PROJECT_DIR$/animateCss/js1.9.1-min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -550,7 +660,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/jijuxie.add.animate.js">
+    <entry file="file://$PROJECT_DIR$/animateCss/jijuxie.add.animate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
@@ -560,7 +670,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/demo.html">
+    <entry file="file://$PROJECT_DIR$/animateCss/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="936">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
@@ -571,7 +681,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/index.html">
+    <entry file="file://$PROJECT_DIR$/animateCss/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -581,7 +691,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/add.jijuxie.animate.css">
+    <entry file="file://$PROJECT_DIR$/animateCss/add.jijuxie.animate.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2952">
           <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="15" />
@@ -589,7 +699,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/README.md">
+    <entry file="file://$PROJECT_DIR$/animateCss/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="2832">
@@ -610,7 +720,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/animate.css/theAllDemo/index.html">
+    <entry file="file://$PROJECT_DIR$/animateCss/theAllDemo/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
           <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
