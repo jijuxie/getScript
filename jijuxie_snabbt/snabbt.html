@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="snabbt.min.js"></script>
+</head>
+<body>
+<h6>单DOM示例单线示例</h6>
+<div style="width:10px;height:10px; background-color:#00ff00;" id="div">
+    hhhh
+</div>
+<h6>单DOM示例多段操作</h6>
+<div style="width:10px;height:10px; background-color:#00ff00;" id="div2">
+
+</div>
+<h6>
+    多DOM运用单段运用
+</h6>
+<div style="width:10px;height:10px; background-color:#00ff00;" class="div3">
+
+</div>
+<div style="width:10px;height:10px; background-color:#00ffff;" class="div3">
+
+</div>
+<div style="width:10px;height:10px; background-color:#ffff00;" class="div3">
+
+</div>
+<h6>
+    多DOM单段函数操作执行不同动画
+</h6>
+<div style="width:10px;height:10px; background-color:#00ff00; float: left;" class="div4">
+
+</div>
+<div style="width:10px;height:10px; background-color:#00ffff;float: left;" class="div4">
+
+</div>
+<div style="width:10px;height:10px; background-color:#ffff00;float: left;" class="div4">
+
+</div>
+<h6 style="margin-top:120px;">
+    单easing动画操作
+</h6>
+<div style="width:10px;height:10px; background-color:#00ff00; float: left;" class="div5">
+
+</div>
+<div style="width:10px;height:10px; background-color:#00ffff;float: left;" class="div5">
+
+</div>
+<div style="width:10px;height:10px; background-color:#ffff00;float: left;" class="div5">
+
+</div>
+<h6>
+    单easingspring动画操作
+</h6>
+<div style="width:10px;height:10px; background-color:#00ff00; float: left;" class="div6">
+
+</div>
+<div style="width:10px;height:10px; background-color:#00ffff;float: left;" class="div6">
+
+</div>
+
+<div style="width:10px;height:10px; background-color:#ffff00;float: left;" class="div6">
+
+</div>
+<h6>
+    多DOM动画过程函数应用
+</h6>
+<div style="width:10px;height:10px; background-color:#00ff00; float: left;" class="div7">
+
+</div>
+<div style="width:10px;height:10px; background-color:#00ffff;float: left;" class="div7">
+
+</div>
+
+<div style="width:10px;height:10px; background-color:#ffff00;float: left;" class="div7">
+
+</div>
+<div style=" transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  cursor: move;
+width:100px;height:500px; background-color:#ffff00;
+
+
+">
+
+</div>
+<script>
+    $(function () {
+        $('#div').snabbt({
+            //当多元素的时候可以写回调方法返回，每个方法会返回元素的个数次，一般第一个为index为第一个元素，第二个参数为total为第所有元素
+            fromPosition: [0, 0, 0],//对应x轴，y轴，z轴，初始位置(px)
+            position: [0, 0, 0],//对应x轴，y轴，z轴,运动后的位置(px)
+            fromRotation: [0, 0, 0],//对应x轴，y轴，z轴旋转初始的角度（π）（Math.PI）(半圆)
+            rotation: [0, 0, 0],//对应x轴，y轴，z轴旋转运动后的角度（π）
+            fromRotationPost: [0, 0, 0],//对应x轴，y轴，z轴旋转初始的角度与fromRotation叠加（π）
+            rotationPost: [0, 0, 0],//对应x轴，y轴，z轴旋转初始的角度与rotation叠加（π）
+            fromScale: [1, 1],//对应x值，y轴的缩放比例（100%）
+            scale: [1, 1],//对应x值，y轴的缩放比例（100%）
+            fromWidth: 10,//对应宽度（px）
+            width: 10,//对应宽度（px）
+            fromHeight: 10,//对应高度（px）
+            height: 10,//对应高度（px）
+            fromOpacity: 1,//起始透明度（100%）
+            opacity: 1,//动画结束透明度（100%）
+            duration: 500,//运动时间（ms）
+            delay: 0,//动画开始前的延迟
+//            easing:'easeOut',//默认值为linear，其余为ease，easeIn，easeOut（特殊为spring）
+//            easing: function (value,index,total) {
+//                //easing回调 会使得速度发生变化，但是总时长不会变化所以修改速度时要计算好时间最后的总距离角度都要尽量保持一致
+//                return value * 2;
+//            },//easing函数定制
+
+            easing: 'spring',//弹簧动画
+            springConstant: 0.3,//气体弹性刚度
+            springDeceleration: 0.8,//加速率
+            springMass: 0,//弹簧阻尼
+
+            start: function (index, total) {
+                //在动画开始前执行index代表当前元素，total代表所有参与动画的元素
+                return undefined;
+            },
+            update: function (i, index, total) {
+                //在执行动画中时调用i代表进程中的某一地方单位（100%）
+                //index代表当前元素，total代表所有参与动画的元素
+            },
+            complete: function (index, total) {
+                //在动画结束时执行index代表当前元素，total代表所有参与动画的元素
+
+                return undefined;
+            },
+            allDone: function () {
+                //Will be called once independent of how many elements animated
+                return undefined;
+            }
+        });
+        $('#div2').snabbt({
+            position: [0, 100, 0]//对应x轴，y轴，z轴,运动后的位置(px)
+        }).snabbt({
+            position: [100, 100, 0]//对应x轴，y轴，z轴,运动后的位置(px)
+        }).snabbt({
+            position: [100, 0, 0]//对应x轴，y轴，z轴,运动后的位置(px)
+        }).snabbt({
+            position: [0, 0, 0]//对应x轴，y轴，z轴,运动后的位置(px)
+        });
+        $('.div3').snabbt({
+            position: [1000, 0, 0],//对应x轴，y轴，z轴,运动后的位置(px)
+            duration: 5000//运动时间（ms）
+        });
+        $('.div4').snabbt({
+            fromPosition: [0, 0, 0],
+            position: function (index, total) {
+
+                return [100 * index / total, 100 * index / total, 0];
+            }
+        });
+        $('.div5').snabbt({
+            position: [500, 0, 0],
+            easing: function (value, index, total) {
+                return value * index / total;
+            },
+            duration: 2000//运动时间（ms）
+        });
+        $('.div6').snabbt({
+            position: [500, 0, 0],
+            easing: 'spring',//弹簧动画
+            springConstant: 1,//气体弹性刚度，刚度系数越大，形变产生的力就越大，运动越快  默认值？？不知道
+            springDeceleration: 0.8,//空气阻力，当为1时为没有任何阻力会永动下去，当为0时阻力为拉力便不会运动了默认值？？不知道
+            springMass: 1//质量，影响图层运动时的弹簧惯性，质量越大，弹簧拉伸和压缩的幅度越大 默认值？？不知道
+        });
+        $('.div7').snabbt({
+
+            position: [500, 0, 0],
+            start: function (index, total) {
+                //在动画开始前执行index代表当前元素，total代表所有参与动画的元素
+                alert(index);
+                alert(total);
+
+                return undefined;
+            },
+            update: function (i, index, total) {
+                //在执行动画中时调用i代表进程中的某一地方单位（100%）
+                //index代表当前元素，total代表所有参与动画的元素
+            },
+            complete: function (index, total) {
+                //在动画结束时执行index代表当前元素，total代表所有参与动画的元素
+                return undefined;
+            },
+            allDone: function () {
+                //Will be called once independent of how many elements animated
+                return undefined;
+            }
+        });
+    })
+</script>
+</body>
+</html>
