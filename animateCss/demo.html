@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js1.9.1-min.js"></script>
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="add.jijuxie.animate.css">
+    <style>
+        #addConfig {
+
+            /*添加前缀名webkit, moz, etc*/
+            animate-duration: 20s; /*动画持续时间*/
+            animate-delay: 10s; /*动画延迟时间*/
+            animate-iteration-count: 20; /*动画执行次数*/
+
+        }
+    </style>
+    <script src="jijuxie.add.animate.js"></script>
+</head>
+<body>
+<h6>基本class事例</h6>
+<div style="width:50px; height:50px; background-color:#00ffff;" class="animated infinite bounce " id="addConfig">
+    animated infinite bounce
+</div>
+<h5>基础！！！</h5>
+<div>
+    animated为实现所有动画必须
+    infinite为使得动画循环进行
+    bounce。。。。为实现的某种效果
+
+    新添加样式好像并没有用处
+    #addConfig或者直接写好id添加对应样式
+    通过注册的新方法ele.animateCss(animationName)为元素添加样式并且在执行完之后立刻销毁
+</div>
+<h6>jq控制事例</h6>
+<div id="theDiv" style="width:50px;height:50px; background-color:#ff0;">
+    jq控制
+</div>
+
+<script>
+    $(document).ready(function () {
+
+$("#a1").click(function () {
+    $("#theDiv").animateCss("bounce");
+})
+    })
+</script>
+</body>
+</html>

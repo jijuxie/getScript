@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Animate.css</title>
+  
+  <meta name="viewport" content="initial-scale=1, minimal-ui">
+  <link rel="stylesheet" href="animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="">
+<header class="site__header island">
+  <div class="wrap">
+   <span id="animationSandbox" style="display: block;"><h1 class="site__title mega">Animate.css</h1></span>
+    <span class="beta subhead">Just-add-water CSS animations</span>
+  </div>
+</header><!-- /.site__header -->
+
+<main class="site__content island" role="content">
+  <div class="wrap">
+    <form>
+      <select class="input input--dropdown js--animations">
+        <optgroup label="Attention Seekers">
+          <option value="bounce">bounce轻轻弹跳一下</option>
+          <option value="flash">flash闪烁一下</option>
+          <option value="pulse">pulse变大缩回原状</option>
+          <option value="rubberBand">rubberBand拉伸回缩</option>
+          <option value="shake">shake左右摇摆</option>
+          <option value="swing">swing悬挂晃动</option>
+          <option value="tada">tada变大轻晃缩回</option>
+          <option value="wobble">wobble大幅左右摇摆</option>
+          <option value="jello">jello左右拧一下</option>
+        </optgroup>
+
+        <optgroup label="Bouncing Entrances">
+          <option value="bounceIn">bounceIn隐藏弹出</option>
+          <option value="bounceInDown">bounceInDown隐藏从上弹出</option>
+          <option value="bounceInLeft">bounceInLeft隐藏从左弹出</option>
+          <option value="bounceInRight">bounceInRight隐藏从右弹出</option>
+          <option value="bounceInUp">bounceInUp隐藏从左弹出</option>
+        </optgroup>
+
+        <optgroup label="Bouncing Exits">
+          <option value="bounceOut">bounceOut微微变大然后弹走</option>
+          <option value="bounceOutDown">bounceOutDown稍微向上然后向下弹走</option>
+          <option value="bounceOutLeft">bounceOutLeft稍微向右然后向左弹走</option>
+          <option value="bounceOutRight">bounceOutRight稍微向左然后向右弹走</option>
+          <option value="bounceOutUp">bounceOutUp稍微向下然后向右弹走</option>
+        </optgroup>
+
+        <optgroup label="Fading Entrances">
+          <option value="fadeIn">fadeIn掩藏显示</option>
+          <option value="fadeInDown">fadeInDown隐藏显示向下弹出</option>
+          <option value="fadeInDownBig">fadeInDownBig隐藏显示向下弹出时间变长</option>
+          <option value="fadeInLeft">fadeInLeft</option>
+          <option value="fadeInLeftBig">fadeInLeftBig</option>
+          <option value="fadeInRight">fadeInRight</option>
+          <option value="fadeInRightBig">fadeInRightBig</option>
+          <option value="fadeInUp">fadeInUp</option>
+          <option value="fadeInUpBig">fadeInUpBig</option>
+        </optgroup>
+
+        <optgroup label="Fading Exits慢隐藏">
+          <option value="fadeOut">fadeOut</option>
+          <option value="fadeOutDown">fadeOutDown</option>
+          <option value="fadeOutDownBig">fadeOutDownBig</option>
+          <option value="fadeOutLeft">fadeOutLeft</option>
+          <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+          <option value="fadeOutRight">fadeOutRight</option>
+          <option value="fadeOutRightBig">fadeOutRightBig</option>
+          <option value="fadeOutUp">fadeOutUp</option>
+          <option value="fadeOutUpBig">fadeOutUpBig</option>
+        </optgroup>
+
+        <optgroup label="Flippers 3D旋转">
+          <option value="flip">flip</option>
+          <option value="flipInX">flipInX</option>
+          <option value="flipInY">flipInY</option>
+          <option value="flipOutX">flipOutX</option>
+          <option value="flipOutY">flipOutY</option>
+        </optgroup>
+
+        <optgroup label="Lightspeed扭曲滑入">
+          <option value="lightSpeedIn">lightSpeedIn</option>
+          <option value="lightSpeedOut">lightSpeedOut</option>
+        </optgroup>
+
+        <optgroup label="Rotating Entrances旋转进入">
+          <option value="rotateIn">rotateIn</option>
+          <option value="rotateInDownLeft">rotateInDownLeft</option>
+          <option value="rotateInDownRight">rotateInDownRight</option>
+          <option value="rotateInUpLeft">rotateInUpLeft</option>
+          <option value="rotateInUpRight">rotateInUpRight</option>
+        </optgroup>
+
+        <optgroup label="Rotating Exits旋转离开">
+          <option value="rotateOut">rotateOut</option>
+          <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+          <option value="rotateOutDownRight">rotateOutDownRight</option>
+          <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+          <option value="rotateOutUpRight">rotateOutUpRight</option>
+        </optgroup>
+
+        <optgroup label="Sliding Entrances近距离滑入">
+          <option value="slideInUp">slideInUp</option>
+          <option value="slideInDown">slideInDown</option>
+          <option value="slideInLeft">slideInLeft</option>
+          <option value="slideInRight">slideInRight</option>
+
+        </optgroup>
+        <optgroup label="Sliding Exits近距离滑行一段距离">
+          <option value="slideOutUp">slideOutUp</option>
+          <option value="slideOutDown">slideOutDown</option>
+          <option value="slideOutLeft">slideOutLeft</option>
+          <option value="slideOutRight">slideOutRight</option>
+          
+        </optgroup>
+        
+        <optgroup label="Zoom Entrances3D进入">
+          <option value="zoomIn">zoomIn</option>
+          <option value="zoomInDown">zoomInDown</option>
+          <option value="zoomInLeft">zoomInLeft</option>
+          <option value="zoomInRight">zoomInRight</option>
+          <option value="zoomInUp">zoomInUp</option>
+        </optgroup>
+        
+        <optgroup label="Zoom Exits3D离开">
+          <option value="zoomOut">zoomOut</option>
+          <option value="zoomOutDown">zoomOutDown</option>
+          <option value="zoomOutLeft">zoomOutLeft</option>
+          <option value="zoomOutRight">zoomOutRight</option>
+          <option value="zoomOutUp">zoomOutUp</option>
+        </optgroup>
+
+        <optgroup label="Specials特殊效果">
+          <option value="hinge">hinge悬挂脱出</option>
+          <option value="rollIn">rollIn 转进</option>
+          <option value="rollOut">rollOut转出</option>
+        </optgroup>
+      </select>
+
+      <button class="butt js--triggerAnimation">Animate it</button>
+    </form>
+    <hr>
+    <p class="meta"><a href="https://raw.github.com/daneden/animate.css/master/animate.css" download="animate.css">Download Animate.css</a> or <a href="https://github.com/daneden/animate.css">View on GitHub</a></p>
+    <p><small>Another thing from <a href="https://daneden.me/">Daniel Eden</a>.</small></p>
+  </div>
+</main><!-- /.site__content -->
+
+<script src="jquery-1.10.2.min.js"></script>
+<script>
+  function testAnim(x) {
+    $('#animationSandbox').removeClass().addClass(x + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass();
+    });
+  };
+
+  $(document).ready(function(){
+    $('.js--triggerAnimation').click(function(e){
+      e.preventDefault();
+      var anim = $('.js--animations').val();
+      testAnim(anim);
+    });
+
+    $('.js--animations').change(function(){
+      var anim = $(this).val();
+      testAnim(anim);
+    });
+  });
+
+</script>
+
+
+
+</body></html>
