@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+            cursor: move;
+        }
+
+        .root {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            -webkit-transform-style: preserve-3d;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    <div class="root">
+        <div style="width:1000px;height: 1000px; background-color:#ff0;">
+
+        </div>
+    </div>
+</div>
+<script src="//hammerjs.github.io/dist/hammer.min.js"></script>
+<script src="snabbt.min.js"></script>
+<script src="3dTouch.js"></script>
+<script>
+    var root = document.querySelector('.root');
+    var container = document.querySelector('.container');
+    setupCameraControls(container, root);
+</script>
+</body>
+</html>
