@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+
+    </script>
+</head>
+<body>
+<div onclick="change(this)" data-a="1">
+    asdasdkasjasklasda
+</div>
+<div onclick="change(this)" data-a="2">
+    asdasdkasjasklasda
+</div>
+<div onclick="change(this)" data-a="3">
+    asdasdkasjasklasda
+</div>
+<script>
+    $(
+    function change(el) {
+        alert($(el).attr('data-a'));
+    })
+</script>
+</body>
+</html>

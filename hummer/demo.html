@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--meta标签，防止doubletap 或 pinch 缩放了viewport：-->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <!--取消tep高亮效果-->
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <title>Title</title>
+    <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="http://hammerjs.github.io/dist/hammer-time.min.js"></script>
+
+</head>
+<body>
+<div>
+    <div class="ele" style="width:500px;height:500px;">
+
+    </div>
+</div>
+<script>
+
+    var ele = document.querySelector('.ele');
+    //    取消掉无法选择文本功能，会影响之前的美观
+    //    delete Hammer.defaults.cssProps.userSelect;
+    //声明一个hummer对象
+    var hammertime = new Hammer(ele);
+    //监听事件，
+    /*
+     *pan移动事件（单点触控在选中元素内滑动，一次滑动会连续出现很多次）
+     *Panstart拖动开始
+     *Panmove拖动过程
+     *Panend拖动结束
+     *Pancancel拖动取消？？？？
+     * panup上移动事件
+     * pandown下移动事件
+     *panleft，左移事件
+     * panright右移事件
+     *
+     * Pinch事件（双指触控事件，多点触控需要单独设置）
+     *Pinchstart多点触控开始
+     * pinchmove多点触控过程
+     * pinchend多点触控结束
+     * pinchancel多点触控取消
+     *pinchin多点触控两手指逐渐靠近
+     *pinchout多点触控两手指越来越远
+     *
+     * press按压事件 （不包含任何事件内的按压时间超过500ms）
+     *pressup按压事件抬起
+     *
+     * rotate旋转事件，两根手指或更多手指成圆形旋转时触发
+     * rotarestart 旋转开始
+     * rotatemove旋转过程
+     * rotateend旋转结束
+     * rotatecancel旋转取消
+     *
+     *swipe事件 （手指在dom区域快速滑动）
+     * swipeleft向左滑动
+     * swiperight向右滑动
+     * swipeup向上滑动
+     * swipedown向下滑动
+     *tap点击事件（触发事件在250ms内，比click要快）
+     *
+     *
+     * */
+    hammertime.on('pan', function (ev) {
+        console.log(ev);
+//        console.log(ev);
+    });
+    /*
+    * 相应后的回调objAPI
+    *type： string 返回当前监听到的类型      eg'tap'
+    *angle：int 返回监听到事件结果与开始产生的角度（无角度为0） 单位 360°以x轴正方向为0，顺时针旋转到y负方向为90,再到x负为180/-180.y正方向为正90 eg:-90
+    *center:obj 返回最后触控的中心点多点触控就是中心，单点触控就是最后点  eg：{x:49,y:113}
+    *deltaTime: int 整个事件持续时间 (sm) eg： 100
+    *deltaX: int 整个事件的中心点相对位移x轴 （px）eg：100
+    * deltaY: int 整个事件的中心点相对位移y轴 （px）eg：100
+    * distance：int 移动距离 （px）eg ：123
+    * poniterType ：string 引起事件的工具 eg 'mouse'，，touch mouse pen kinect
+    * target:  DOMOBJ 事件监听的DOM元素 eg：div.ele
+    * timeStamp: int  结束时事件戳：eg：    1489752309395
+    * velocityX 在X轴坐标上的移动速率单位为px/ms
+    * velocityY 在y轴坐标上的移动速率单位为px/ms
+    * scale多点触控在结束时的缩放比例如果为单点则为1
+    * rotation 多点触摸结束时的旋转数值若为单点则为0
+    * */
+    //开启捏放
+    hammertime.get('pinch').set({enable: true});
+    //开启旋转
+    hammertime.get('rotate').set({enable: true});
+    //    若要允许识别器识别垂直方位或全部方位的 pan 和 swipe，可能会引起元素的卡主
+    //    hammertime.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+    //    hammertime.get('pan').set({ direction: Hammer.DIRECTION_VERTICAL });
+    //    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+    //    hammertime.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+
+</script>
+</body>
+</html>

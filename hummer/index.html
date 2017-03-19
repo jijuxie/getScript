@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--meta标签，防止doubletap 或 pinch 缩放了viewport：-->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <!--取消tep高亮效果-->
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <title>Title</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="http://hammerjs.github.io/dist/hammer-time.min.js"></script>
+    <script src="js1.9.1-min.js"></script>
+</head>
+<body>
+<div>
+    <div class="ele" style="width:1000px;height:1000px;background-color:#ffff00;">
+        <div class="bot" style="border-radius: 100%;background-color:#0ff;width:100px;height:100px;position:relative;">
+
+        </div>
+    </div>
+</div>
+<script>
+    var ele = document.querySelector('.ele');
+    var theBot = $('.bot');
+    var theR = parseFloat(theBot.css('width')) / 2;
+    var theBotCanterX = function () {
+        return parseInt(theBot.css('left')) + parseInt(theBot.css('width')) / 2
+    };
+    var theBotCanterY = function () {
+     return parseInt(theBot.css('top')) + parseInt(theBot.css('height')) / 2
+    };
+    function moveBot(x, y) {
+        theBot.css({'left': x + 'px', 'top': y + 'px'});
+    }
+    function check(x, y) {
+        return Math.sqrt((Math.pow((x - theBotCanterX()), 2) + Math.pow((y - theBotCanterY()), 2))) < parseInt(theBot.css('width')) / 2;
+    }
+    var hammertime = new Hammer(ele);
+    var theDisY = 0;
+    var theDisX = 0;
+    function rePointXY(x, y) {
+
+        theDisX = -x + theBotCanterX();
+        theDisY = -y + theBotCanterY();
+    }
+    hammertime.get('pan').set({direction: Hammer.DIRECTION_ALL,pointer:100});
+    hammertime.on('panstart panmove panend', function (ev) {
+        if (check(ev.center.x, ev.center.y)) {
+            if (ev.type == 'panstart') {
+                rePointXY(ev.center.x, ev.center.y);
+            } else {
+                var theX = theDisX + ev.center.x - theR;
+                var theY = theDisY + ev.center.y - theR;
+                moveBot(theX, theY);
+            }
+        }
+    });
+</script>
+</body>
+</html>
